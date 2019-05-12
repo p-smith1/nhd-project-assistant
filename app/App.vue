@@ -1,8 +1,8 @@
 <template>
   <Page>
     <ActionBar>
-      <GridLayout width="100%" columns="auto, *">
-        <Label class="fa" :text="'fa-bars' | fonticon" @tap="$refs.drawer.nativeView.toggleDrawerState()" col="0"/>
+      <GridLayout class="fa-lg" width="100%" columns="auto, *" @tap="$refs.drawer.nativeView.toggleDrawerState()">
+        <Label class="fa" verticalAlignment="center" :text="'fa-bars' | fonticon" col="0"/>
         <Label class="title" :text="currentPage.name"  col="1"/>
       </GridLayout>
     </ActionBar>
@@ -15,9 +15,10 @@
         <StackLayout v-for="(page, i) in routes"
                      :key="i"
                      orientation="horizontal"
-                     @tap="goToPage(page)">
-          <Label width="110px" class="drawer-item fa" :text="page.icon | fonticon" />
-          <Label :text="page.name" />
+                     @tap="goToPage(page)"
+                     class="fa-lg item-border">
+          <Label class="drawer-item fa fa-lg" :text="page.icon | fonticon" />
+          <Label :text="page.name" verticalAlignment="center" />
         </StackLayout>
       </StackLayout>
 
@@ -62,6 +63,10 @@
         color: #ffffff;
     }
 
+    .fa-lg {
+      font-size: 20em;
+    }
+
     .title {
         text-align: left;
         padding-left: 16;
@@ -83,8 +88,13 @@
     }
 
     .drawer-item {
-        padding: 8 16;
+        padding: 16 16;
         color: #333333;
-        font-size: 16;
+        width: 60em;
+    }
+
+    .item-border {
+      border-bottom-color: black;
+      border-bottom-width: 1px;
     }
 </style>

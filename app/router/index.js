@@ -1,13 +1,23 @@
 import Home from '~/pages/Home'
-import Teachers from '~/pages/Teachers'
-import Students from '~/pages/Students'
-import Judges from '~/pages/Judges'
+import GettingStarted from '~/pages/GettingStarted'
+import HistoricalThinking from '~/pages/HistoricalThinking'
+import ResearchTools from '~/pages/ResearchTools'
+import ThesisStatements from '~/pages/ThesisStatements'
+import ProjectOrganization from '~/pages/ProjectOrganization'
+import ProcessPaper from '~/pages/ProcessPaper'
+import StudentSamples from '~/pages/StudentSamples'
+import OnlineClassroomVideos from '~/pages/OnlineClassroomVideos'
 
 const routes = {
   Home,
-  Teachers,
-  Students,
-  Judges
+  GettingStarted,
+  HistoricalThinking,
+  ResearchTools,
+  ThesisStatements,
+  ProjectOrganization,
+  ProcessPaper,
+  StudentSamples,
+  OnlineClassroomVideos
 }
 
 export default routes

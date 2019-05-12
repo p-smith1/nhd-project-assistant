@@ -1,15 +1,15 @@
 <template>
   <Page actionBarHidden="true">
     <StackLayout>
-      <Label text="Judges Page" horizontalAlignment="center" />
+      <Label text="Research Tools" horizontalAlignment="center" />
     </StackLayout>
   </Page>
 </template>
 
 <script>
   export default {
-    name: 'Judges',
-    icon: 'fa-gavel',
+    name: 'ResearchTools',
+    icon: 'fa-wrench',
     data () {
       return {};
     },

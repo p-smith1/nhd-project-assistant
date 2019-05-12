@@ -1,14 +1,14 @@
 <template>
   <Page actionBarHidden="true">
     <StackLayout>
-      <Label text="Students Page" horizontalAlignment="center" />
+      <Label text="Thesis Statements" horizontalAlignment="center" />
     </StackLayout>
   </Page>
 </template>
 
 <script>
   export default {
-    name: 'Students',
+    name: 'Thesis Statements',
     icon: 'fa-graduation-cap',
     data () {
       return {};
