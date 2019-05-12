@@ -3,7 +3,7 @@
 android {
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nhd.georgia.application"
+    applicationId = "org.nhd.project.assistant.application"
   }
   aaptOptions {  
     additionalParameters "--no-version-vectors"  

@@ -1,11 +1,11 @@
 {
-  "name": "nhd-georgia",
+  "name": "nhd-project-assistant",
   "version": "1.0.0",
   "description": "A native application built with NativeScript-Vue",
   "author": "logitron <mpatricks@gmail.com>",
   "license": "MIT",
   "nativescript": {
-    "id": "org.nhd.georgia.application",
+    "id": "org.nhd.project.assistant.application",
     "tns-ios": {
       "version": "5.0.0"
     },
@@ -36,7 +36,7 @@
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
     "lazy": "1.0.11",
-    "nativescript-dev-webpack": "^0.22.0-webpack-2019-05-08-135750-08",
+    "nativescript-dev-webpack": "^0.21.2",
     "nativescript-vue-template-compiler": "^2.2.2",
     "nativescript-worker-loader": "~0.9.5",
     "node-sass": "^4.12.0",
