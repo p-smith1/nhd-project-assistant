@@ -1,7 +1,7 @@
 <template>
   <Page actionBarHidden="true">
     <StackLayout>
-      <WebView src="http://www.galileo.usg.edu/welcome" height="100%" />
+      <WebView src="https://www.galileo.usg.edu/welcome" height="100%" />
     </StackLayout>
   </Page>
 </template>
