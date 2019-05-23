@@ -3,7 +3,7 @@
     <ActionBar>
       <GridLayout class="fa-lg" width="100%" columns="auto, *" @tap="$refs.drawer.nativeView.toggleDrawerState()">
         <Label class="fa" verticalAlignment="center" :text="'fa-bars' | fonticon" col="0"/>
-        <Label class="title" :text="currentPage.name"  col="1"/>
+        <Label class="title" :text="currentPage.displayName"  col="1"/>
       </GridLayout>
     </ActionBar>
 
@@ -18,13 +18,15 @@
                      @tap="goToPage(page)"
                      class="fa-lg item-border">
           <Label class="drawer-item fa fa-lg" :text="page.icon | fonticon" />
-          <Label :text="page.name" verticalAlignment="center" />
+          <Label :text="page.displayName" verticalAlignment="center" />
         </StackLayout>
       </StackLayout>
 
       <Frame ~mainContent>
         <!-- <slot name="mainContent"></slot> -->
-        <component :is="currentPage"></component>
+        <component
+          :is="currentPage"
+          @update-current-page="handleUpdateCurrentPage"></component>
       </Frame>
 
       <!-- <GridLayout ~mainContent columns="*" rows="*">
@@ -52,6 +54,10 @@
         this.currentPage = pageComponent
         // and we probably want to close the drawer when changing pages
         this.$refs.drawer.nativeView.closeDrawer()
+      },
+
+      handleUpdateCurrentPage: function (e) {
+        this.currentPage = e
       }
     }
   }
