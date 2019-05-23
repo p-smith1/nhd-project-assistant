@@ -9,6 +9,7 @@
 <script>
   export default {
     name: 'Home',
+    displayName: 'Home',
     icon: 'fa-home',
     data () {
       return {};
