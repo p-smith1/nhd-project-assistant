@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "917659080010",
+    "firebase_url": "https://nhd-georgia.firebaseio.com",
+    "project_id": "nhd-georgia",
+    "storage_bucket": "nhd-georgia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917659080010:android:8d47fb68ad79ff58",
+        "android_client_info": {
+          "package_name": "net.kashew.nhd.ga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917659080010-jn463fkuv722qsqrigjdh06qe18p4ngg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFu05sVNkRTFBhJr6D629kF7eucpjatY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917659080010-jn463fkuv722qsqrigjdh06qe18p4ngg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "917659080010-6al6o8opatv1fpllf2k4g1mmpspv6p17.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.kashew.nhd.ga"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -38,6 +38,7 @@
 
 <script>
   import routes from '~/router'
+  import firebase from 'nativescript-plugin-firebase'
 
   export default {
     data() {
@@ -51,13 +52,23 @@
       goToPage (pageComponent) {
         // use the manual navigation method
         // this.$navigateTo(pageComponent, { clearHistory: true })
+        this.logEvent(pageComponent.name)
         this.currentPage = pageComponent
         // and we probably want to close the drawer when changing pages
         this.$refs.drawer.nativeView.closeDrawer()
       },
 
       handleUpdateCurrentPage: function (e) {
+        this.logEvent(e.name)
         this.currentPage = e
+      },
+
+      logEvent: function (key) {
+        firebase.analytics.logEvent({ key: `${key}_tapped` }).then(
+          function () {
+            console.log("Firebase Analytics event logged");
+          }
+        )
       }
     }
   }

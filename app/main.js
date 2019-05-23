@@ -4,6 +4,7 @@ import routes from '~/router'
 import store from './store'
 import drawerContent from '~/components/drawerContent'
 import sideDrawer from '~/components/sideDrawer'
+import firebase from 'nativescript-plugin-firebase'
 import Home from '~/pages/Home'
 
 import VueDevtools from 'nativescript-vue-devtools'
@@ -16,6 +17,18 @@ TNSFontIcon.paths = {
 TNSFontIcon.loadCss();
 
 Vue.filter('fonticon', fonticon)
+
+firebase.init({
+  // Optionally pass in properties for database, authentication and cloud messaging,
+  // see their respective docs.
+}).then(
+    function () {
+      console.log("firebase.init done");
+    },
+    function (error) {
+      console.log("firebase.init error: " + error);
+    }
+);
 
 Vue.prototype.$routes = routes
 
