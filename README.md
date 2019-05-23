@@ -1,6 +1,6 @@
-# NHD Project Assistant
+# NHD Georgia
 
-> NHD Project Assistant is a tool to assist students on the journey to creating and presenting their National History Day project.
+> NHD Georgia is a tool to assist students on the journey to creating and presenting their National History Day project.
 
 ## Usage
 

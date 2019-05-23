@@ -3,9 +3,15 @@
 android {
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nhd.project.assistant.application"
+    applicationId = "net.kashew.nhd.ga"
   }
+
   aaptOptions {  
     additionalParameters "--no-version-vectors"  
-  }  
+  }
+
+  repositories {
+    google()
+    jcenter()
+  }
 } 
