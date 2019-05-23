@@ -1,7 +1,7 @@
 <template>
   <Page actionBarHidden="true">
     <StackLayout>
-      <Label text="Getting Started" horizontalAlignment="center" />
+      <WebView src="https://www.nhd.org/how-enter-contest" height="100%" />
     </StackLayout>
   </Page>
 </template>
@@ -9,6 +9,7 @@
 <script>
   export default {
     name: 'GettingStarted',
+    displayName: 'Getting Started',
     icon: 'fa-rocket',
     data () {
       return {};
