@@ -99,7 +99,7 @@
     .drawer-header {
         padding: 50 16 16 16;
         margin-bottom: 16;
-        background-color: #53ba82;
+        background-color: #DD2D30;
         color: #ffffff;
         font-size: 24;
     }
