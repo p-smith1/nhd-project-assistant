@@ -10,7 +10,6 @@
     <RadSideDrawer ref="drawer">
       <ScrollView ~drawerContent class="sidedrawer-left">
         <StackLayout>
-          <!-- <Label class="sidedrawer-header" text="Drawer"/> -->
           <Image src="~/assets/images/nhd-ga-logo.png" width="25%" class="m-t-10" />
 
           <StackLayout v-for="(page, i) in routes"
@@ -30,15 +29,10 @@
       </ScrollView>
 
       <Frame ~mainContent>
-        <!-- <slot name="mainContent"></slot> -->
         <component
           :is="currentPage"
           @update-current-page="handleUpdateCurrentPage"></component>
       </Frame>
-
-      <!-- <GridLayout ~mainContent columns="*" rows="*">
-        <Image src="~/assets/images/nhd-logo.jpg" width="50%" />
-      </GridLayout> -->
     </RadSideDrawer>
   </Page>
 </template>
@@ -58,11 +52,9 @@
 
     methods: {
       goToPage (pageComponent) {
-        // use the manual navigation method
-        // this.$navigateTo(pageComponent, { clearHistory: true })
         this.logEvent(pageComponent.name)
+
         this.currentPage = pageComponent
-        // and we probably want to close the drawer when changing pages
         this.$refs.drawer.nativeView.closeDrawer()
       },
 
