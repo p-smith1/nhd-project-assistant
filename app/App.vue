@@ -8,19 +8,26 @@
     </ActionBar>
 
     <RadSideDrawer ref="drawer">
-      <StackLayout ~drawerContent class="sidedrawer-left">
-        <!-- <Label class="sidedrawer-header" text="Drawer"/> -->
-        <Image src="~/assets/images/nhd-logo.jpg" width="25%" />
+      <ScrollView ~drawerContent class="sidedrawer-left">
+        <StackLayout>
+          <!-- <Label class="sidedrawer-header" text="Drawer"/> -->
+          <Image src="~/assets/images/nhd-ga-logo.png" width="25%" class="m-t-10" />
 
-        <StackLayout v-for="(page, i) in routes"
-                     :key="i"
-                     orientation="horizontal"
-                     @tap="goToPage(page)"
-                     class="fa-lg item-border">
-          <Label class="drawer-item fa fa-lg" :text="page.icon | fonticon" />
-          <Label :text="page.displayName" verticalAlignment="center" />
+          <StackLayout v-for="(page, i) in routes"
+                      :key="i"
+                      orientation="horizontal"
+                      @tap="goToPage(page)"
+                      class="fa-lg item-border">
+            <Label class="drawer-item fa fa-lg" :text="page.icon | fonticon" />
+            <Label :text="page.displayName" verticalAlignment="center" />
+          </StackLayout>
+
+          <StackLayout orientation="horizontal" horizontalAlignment="center" class="m-t-30">
+            <Image src="~/assets/images/facebook-logo.png" width="20%" class="m-20" @tap="launchFacebook()" />
+            <Image src="~/assets/images/twitter-logo.png" width="20%" class="m-20" @tap="launchTwitter()" />
+          </StackLayout>
         </StackLayout>
-      </StackLayout>
+      </ScrollView>
 
       <Frame ~mainContent>
         <!-- <slot name="mainContent"></slot> -->
@@ -39,6 +46,7 @@
 <script>
   import routes from '~/router'
   import firebase from 'nativescript-plugin-firebase'
+  import * as utilsModule from 'tns-core-modules/utils/utils'
 
   export default {
     data() {
@@ -58,9 +66,18 @@
         this.$refs.drawer.nativeView.closeDrawer()
       },
 
+      launchTwitter () {
+        this.logEvent('Twitter')
+        utilsModule.openUrl('https://twitter.com/NHDGeorgia')
+      },
+
+      launchFacebook () {
+        this.logEvent('Facebook')
+        utilsModule.openUrl('https://www.facebook.com/NHDatLaGrangeCollege')
+      },
+
       handleUpdateCurrentPage: function (e) {
         this.logEvent(e.name)
-        this.currentPage = e
       },
 
       logEvent: function (key) {
