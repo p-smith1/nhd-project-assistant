@@ -12,9 +12,9 @@
 
       <Label text="Sponsors" class="font-weight-bold m-t-30" />
       <Label class="hr-dark m-10" />
-      <StackLayout orientation="horizontal">
-        <Image src="~/assets/images/ga-humanities-logo.png" width="50%" />
-        <Image src="~/assets/images/lagrange-college-logo.png" width="50%" />
+      <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Image src="~/assets/images/ga-humanities-logo.png" width="45%" class="m-x-5" />
+        <Image src="~/assets/images/lagrange-college-logo.png" width="45%" class="m-x-10" />
       </StackLayout>
     </StackLayout>
   </Page>
