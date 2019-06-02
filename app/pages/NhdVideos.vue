@@ -1,15 +1,14 @@
 <template>
   <Page actionBarHidden="true">
     <StackLayout>
-      <WebView src="https://www.youtube.com/user/nationalhistory" height="100%" />
-    </StackLayout>
-
-    <StackLayout class="m-10" height="100%" verticalAlignment="middle">
-      <ListView for="channel in channels">
-        <v-template>
-          <Button :text="channel.text" class="m-y-10" @tap="onChannelTap(channel)" />
-        </v-template>
-      </ListView>
+      <TabView>
+        <TabViewItem title="NHD GA Channel" @selectedIndexChange="changeChannel">
+          <WebView src="https://www.youtube.com/channel/UClWdIiQNkw26Tz4YQ77Hi5A" height="100%" />
+        </TabViewItem>
+        <TabViewItem title="NHD Channel">
+          <WebView src="https://www.youtube.com/user/nationalhistory" height="100%" />
+        </TabViewItem>
+      </TabView>
     </StackLayout>
   </Page>
 </template>
@@ -26,24 +25,24 @@
       return {
         channels: [
           {
-            name: 'NhdVideos_NhdYouTubeChannel',
-            url: 'https://www.youtube.com/user/nationalhistory',
-            text: 'National History Day (NHD) YouTube Channel'
-          },
-          {
             name: 'NhdVideos_NhdGeorgiaYouTubeChannel',
             url: 'https://www.youtube.com/channel/UClWdIiQNkw26Tz4YQ77Hi5A',
             text: 'NHD Georgia YouTube Channel'
+          },
+          {
+            name: 'NhdVideos_NhdYouTubeChannel',
+            url: 'https://www.youtube.com/user/nationalhistory',
+            text: 'National History Day (NHD) YouTube Channel'
           }
         ]
       }
     },
 
     methods: {
-      onChannelTap: function (channel) {
-        this.$emit('update-current-page', channel.name)
+      changeChannel: function (newArgs) {
+        let index = newArgs.value
 
-        utilsModule.openUrl(channel.url)
+        this.$emit('update-current-page', this.channels[index].name)
       }
     }
   }
