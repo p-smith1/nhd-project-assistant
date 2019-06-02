@@ -1,16 +1,34 @@
 <template>
   <Page actionBarHidden="true">
     <ScrollView>
-      <StackLayout class="m-10" height="100%">
-        <Label text="Theme and Topic Exploration" class="font-weight-bold" />
-        <Label class="hr-dark m-10" />
-        <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the theme sheet, theme book, and rule book. Check out the following sources to help you select and narrow a topic for your NHD project:" />
+      <StackLayout>
+        <TabView>
+          <TabViewItem title="Theme">
+            <StackLayout class="m-10">
+              <Image src="~/assets/images/breaking-barriers-logo.png" width="70%" class="m-b-20" />
 
-        <ListView for="source in sources" height="100%">
-          <v-template>
-            <Button :text="source.text" class="m-y-10" @tap="onSourceTap(source)" />
-          </v-template>
-        </ListView>
+              <Label text="Theme" class="font-weight-bold" />
+              <Label class="hr-dark m-10" />
+              <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2019-2020 theme book and rule book.  This year’s theme is “Breaking Barriers in History”" />
+
+              <Button text="2019 Theme Book" class="m-y-10" />
+              <Button text="2019 NHD Rule Book" class="m-y-10" />
+            </StackLayout>
+          </TabViewItem>
+          <TabViewItem title="Topic Exploration">
+            <StackLayout class="m-10">
+              <Label text="Topic Exploration" class="font-weight-bold" />
+              <Label class="hr-dark m-10" />
+              <Label textWrap="true" text="Selecting a topic for your NHD project is one of the most critical decisions you’re going to make.  This is a subject that you’re going to be spending a LOT of time with so it has to be something YOU are interested in.  Remember that you want to be able to show how your topic relates to the theme AND its significance to history!  Check out the following sources to help you select and narrow a topic for your NHD project:" />
+
+              <ListView for="source in sources" height="100%" class="m-t-20">
+                <v-template>
+                  <Button :text="source.text" class="m-y-10" @tap="onSourceTap(source)" />
+                </v-template>
+              </ListView>
+            </StackLayout>
+          </TabViewItem>
+        </TabView>
       </StackLayout>
     </ScrollView>
   </Page>
