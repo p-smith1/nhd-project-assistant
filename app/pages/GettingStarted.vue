@@ -1,9 +1,9 @@
 <template>
   <Page actionBarHidden="true">
-    <ScrollView>
-      <StackLayout>
-        <TabView>
-          <TabViewItem title="Theme">
+    <StackLayout>
+      <TabView>
+        <TabViewItem title="Theme">
+          <ScrollView>
             <StackLayout class="m-10">
               <Image src="~/assets/images/breaking-barriers-logo.png" width="70%" class="m-b-20" />
 
@@ -11,12 +11,14 @@
               <Label class="hr-dark m-10" />
               <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2019-2020 theme book and rule book.  This year’s theme is “Breaking Barriers in History”" />
 
-              <Button text="2019 Theme Book" class="m-y-10" />
-              <Button text="2019 NHD Rule Book" class="m-y-10" />
+              <Button text="2019 Theme Book" class="m-y-10" @tap="openThemeBook()" />
+              <Button text="2019 NHD Rule Book" class="m-y-10" @tap="openRuleBook()" />
             </StackLayout>
-          </TabViewItem>
-          <TabViewItem title="Topic Exploration">
-            <StackLayout class="m-10">
+          </ScrollView>
+        </TabViewItem>
+        <TabViewItem title="Topic Exploration">
+          <ScrollView height="100%">
+            <StackLayout height="100%" class="m-10">
               <Label text="Topic Exploration" class="font-weight-bold" />
               <Label class="hr-dark m-10" />
               <Label textWrap="true" text="Selecting a topic for your NHD project is one of the most critical decisions you’re going to make.  This is a subject that you’re going to be spending a LOT of time with so it has to be something YOU are interested in.  Remember that you want to be able to show how your topic relates to the theme AND its significance to history!  Check out the following sources to help you select and narrow a topic for your NHD project:" />
@@ -27,10 +29,10 @@
                 </v-template>
               </ListView>
             </StackLayout>
-          </TabViewItem>
-        </TabView>
-      </StackLayout>
-    </ScrollView>
+          </ScrollView>
+        </TabViewItem>
+      </TabView>
+    </StackLayout>
   </Page>
 </template>
 
@@ -73,6 +75,18 @@
         this.$emit('update-current-page', source.name)
 
         utilsModule.openUrl(source.url)
+      },
+
+      openThemeBook: function () {
+        this.$emit('update-current-page', 'GettingStarted_ThemeBook')
+
+        utilsModule.openUrl('http://nimbus.lagrange.edu/resources/documents/NHD/2019%20NHD%20Theme%20Book.pdf')
+      },
+
+      openRuleBook: function () {
+        this.$emit('update-current-page', 'GettingStarted_RuleBook')
+
+        utilsModule.openUrl('http://www.lagrange.edu/resources/documents/NHDContestRuleBook_Web%202014-2015.pdf')
       }
     }
   }
