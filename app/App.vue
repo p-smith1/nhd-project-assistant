@@ -41,6 +41,7 @@
   import routes from '~/router'
   import firebase from 'nativescript-plugin-firebase'
   import * as utilsModule from 'tns-core-modules/utils/utils'
+  import * as email from 'nativescript-email'
 
   export default {
     data() {
@@ -54,8 +55,23 @@
       goToPage (pageComponent) {
         this.logEvent(pageComponent.name)
 
-        this.currentPage = pageComponent
+        if (pageComponent.name !== 'ContactUs') {
+          this.currentPage = pageComponent
+        } else {
+          this.sendEmail()
+        }
+
         this.$refs.drawer.nativeView.closeDrawer()
+      },
+
+      sendEmail () {
+        email.compose({
+          subject: 'NHD Georgia Native App Feedback',
+          body: '',
+          to: ['kshirley@lagrange.edu'],
+          cc: [],
+          bcc: []
+        })
       },
 
       launchTwitter () {

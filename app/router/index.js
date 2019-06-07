@@ -9,7 +9,12 @@ const routes = {
   GettingStarted,
   ResearchTools,
   NhdVideos,
-  Donate
+  Donate,
+  ContactUs: {
+    icon: 'fa-envelope',
+    displayName: 'Contact Us',
+    name: 'ContactUs'
+  }
 }
 
 export default routes
