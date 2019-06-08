@@ -101,7 +101,7 @@
 
 <style scoped>
     ActionBar {
-        background-color: #DD2D30;
+        background-color: #CB2C30;
         color: #ffffff;
     }
 
@@ -124,7 +124,7 @@
     .drawer-header {
         padding: 50 16 16 16;
         margin-bottom: 16;
-        background-color: #DD2D30;
+        background-color: #CB2C30;
         color: #ffffff;
         font-size: 24;
     }
