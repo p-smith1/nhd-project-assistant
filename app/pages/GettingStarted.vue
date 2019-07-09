@@ -11,8 +11,9 @@
               <Label class="hr-dark m-10" />
               <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2019-2020 theme book and rule book.  This year’s theme is “Breaking Barriers in History”" />
 
-              <Button text="2019 Theme Book" class="m-y-10" @tap="openThemeBook()" />
-              <Button text="2019 NHD Rule Book" class="m-y-10" @tap="openRuleBook()" />
+              <Button text="2020 Theme Book" class="m-y-10" @tap="openThemeBook()" />
+              <Button text="2020 NHD Rule Book" class="m-y-10" @tap="openRuleBook()" />
+              <Button text="2020 NHD Theme Narrative" class="m-y-10" @tap="openThemeNarrative()" />
             </StackLayout>
           </ScrollView>
         </TabViewItem>
@@ -80,13 +81,19 @@
       openThemeBook: function () {
         this.$emit('update-current-page', 'GettingStarted_ThemeBook')
 
-        utilsModule.openUrl('http://nimbus.lagrange.edu/resources/documents/NHD/2019%20NHD%20Theme%20Book.pdf')
+        utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/NHD_2020ThemeBook_web%20version_0.pdf')
       },
 
       openRuleBook: function () {
         this.$emit('update-current-page', 'GettingStarted_RuleBook')
 
-        utilsModule.openUrl('http://www.lagrange.edu/resources/documents/NHDContestRuleBook_Web%202014-2015.pdf')
+        utilsModule.openUrl('http://nimbus.lagrange.edu/resources/documents/NHDContestRuleBook_Web%202014-2015.pdf')
+      },
+
+      openThemeNarrative: function () {
+        this.$emit('update-current-page', 'GettingStarted_ThemeNarrative')
+
+        utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/NHD_2020ThemeNarrative.pdf')
       }
     }
   }
