@@ -6,25 +6,25 @@
   "license": "MIT",
   "nativescript": {
     "id": "net.kashew.nhd.ga",
-    "tns-ios": {
-      "version": "5.3.1"
-    },
     "tns-android": {
-      "version": "5.3.1"
+      "version": "6.0.0"
+    },
+    "tns-ios": {
+      "version": "6.0.1"
     }
   },
   "dependencies": {
     "@vue/devtools": "^5.1.0",
     "nativescript-email": "^1.5.3",
     "nativescript-fonticon": "^2.0.0",
-    "nativescript-plugin-firebase": "^8.3.2",
+    "nativescript-plugin-firebase": "9.0.2",
     "nativescript-socketio": "^3.2.1",
     "nativescript-theme-core": "^1.0.6",
     "nativescript-toasty": "^1.3.0",
-    "nativescript-ui-sidedrawer": "^6.0.0",
+    "nativescript-ui-sidedrawer": "7.0.0",
     "nativescript-vue": "^2.2.2",
     "nativescript-vue-devtools": "^1.2.0",
-    "tns-core-modules": "^5.4.0",
+    "tns-core-modules": "6.0.1",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
     "lazy": "1.0.11",
-    "nativescript-dev-webpack": "^0.21.2",
+    "nativescript-dev-webpack": "1.0.1",
     "nativescript-vue-template-compiler": "^2.2.2",
     "nativescript-worker-loader": "~0.9.5",
     "node-sass": "^4.12.0",
