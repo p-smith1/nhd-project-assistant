@@ -13,8 +13,8 @@ import {TNSFontIcon, fonticon} from 'nativescript-fonticon'
 TNSFontIcon.debug = true;
 TNSFontIcon.paths = {
   'fa': './assets/font-awesome.css'
-};
-TNSFontIcon.loadCss();
+}
+TNSFontIcon.loadCss()
 
 Vue.filter('fonticon', fonticon)
 
@@ -28,7 +28,7 @@ firebase.init({
     function (error) {
       console.log("firebase.init error: " + error);
     }
-);
+)
 
 Vue.prototype.$routes = routes
 
