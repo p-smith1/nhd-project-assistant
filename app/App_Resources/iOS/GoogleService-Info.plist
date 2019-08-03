@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>917659080010-6al6o8opatv1fpllf2k4g1mmpspv6p17.apps.googleusercontent.com</string>
+	<string>1019694423572-gpsguv7n77bp4nslurajvb8855j0nq9k.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.917659080010-6al6o8opatv1fpllf2k4g1mmpspv6p17</string>
+	<string>com.googleusercontent.apps.1019694423572-gpsguv7n77bp4nslurajvb8855j0nq9k</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1019694423572-vspatf8m9m5ib0o6ilciv66dlnn4l76q.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDVm2GTip4KCmlAsuE8QUts9CMiqC-XQ5Y</string>
+	<string>AIzaSyD6RVzohMD3yF0Ll8_pqJr9DszhbqXMXKU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>917659080010</string>
+	<string>1019694423572</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>net.kashew.nhd.ga</string>
 	<key>PROJECT_ID</key>
-	<string>nhd-georgia</string>
+	<string>nhd-georgia-64587543</string>
 	<key>STORAGE_BUCKET</key>
-	<string>nhd-georgia.appspot.com</string>
+	<string>nhd-georgia-64587543.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:917659080010:ios:8d47fb68ad79ff58</string>
+	<string>1:1019694423572:ios:8d47fb68ad79ff58</string>
 	<key>DATABASE_URL</key>
-	<string>https://nhd-georgia.firebaseio.com</string>
+	<string>https://nhd-georgia-64587543.firebaseio.com</string>
 </dict>
 </plist>

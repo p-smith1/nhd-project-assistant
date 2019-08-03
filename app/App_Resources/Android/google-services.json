@@ -1,38 +1,46 @@
 {
   "project_info": {
-    "project_number": "917659080010",
-    "firebase_url": "https://nhd-georgia.firebaseio.com",
-    "project_id": "nhd-georgia",
-    "storage_bucket": "nhd-georgia.appspot.com"
+    "project_number": "1019694423572",
+    "firebase_url": "https://nhd-georgia-64587543.firebaseio.com",
+    "project_id": "nhd-georgia-64587543",
+    "storage_bucket": "nhd-georgia-64587543.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:917659080010:android:8d47fb68ad79ff58",
+        "mobilesdk_app_id": "1:1019694423572:android:8d47fb68ad79ff58",
         "android_client_info": {
           "package_name": "net.kashew.nhd.ga"
         }
       },
       "oauth_client": [
         {
-          "client_id": "917659080010-jn463fkuv722qsqrigjdh06qe18p4ngg.apps.googleusercontent.com",
+          "client_id": "1019694423572-vspatf8m9m5ib0o6ilciv66dlnn4l76q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.kashew.nhd.ga",
+            "certificate_hash": "5db2acf04ea7c757341a94360ef51902c553585a"
+          }
+        },
+        {
+          "client_id": "1019694423572-f3lkocd2dsvq2nvjrr0uorbsp77qmuij.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCFu05sVNkRTFBhJr6D629kF7eucpjatY8"
+          "current_key": "AIzaSyBxfOj-UFfhBKKZoYixJJO9mK7dwSW8mB4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "917659080010-jn463fkuv722qsqrigjdh06qe18p4ngg.apps.googleusercontent.com",
+              "client_id": "1019694423572-f3lkocd2dsvq2nvjrr0uorbsp77qmuij.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "917659080010-6al6o8opatv1fpllf2k4g1mmpspv6p17.apps.googleusercontent.com",
+              "client_id": "1019694423572-gpsguv7n77bp4nslurajvb8855j0nq9k.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "net.kashew.nhd.ga"
