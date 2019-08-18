@@ -46,5 +46,7 @@ Be sure to update the `AndroidManifest.xml` located at `App_Resources/Android/sr
 * `android:versionCode`
 * `android:versionName`
 
+```
 # Build release version for Google Play Store
 tns build android --release --key-store-path nhd_ga_release.keystore --key-store-password <store-password> --bundle --key-store-alias <alias> --key-store-alias-password <alias-password>
+```
