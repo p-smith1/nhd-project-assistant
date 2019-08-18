@@ -49,22 +49,22 @@
         sources: [
           {
             name: 'GettingStarted_HowToNarrowTopicDrShirley',
-            url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/Narrowing-a-Topic.pdf',
+            url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/Narrowing-a-Topic.pdf',
             text: 'How to Narrow a Topic by Dr. Kevin Shirley'
           },
           {
             name: 'GettingStarted_SampleTopicFunnelMnhs',
-            url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/Sample-Topic-Funnel.pdf',
+            url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/Sample-Topic-Funnel.pdf',
             text: 'Sample Topic Funnel from MNHS'
           },
           {
             name: 'GettingStarted_HowToSelectNarrowTopicMnhs',
-            url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/Selecting-and-Narrowing-Topic.pdf',
+            url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/Selecting-and-Narrowing-Topic.pdf',
             text: 'How to Select and Narrow a Topic by MNHS'
           },
           {
             name: 'GettingStarted_SelectingTopicNhd',
-            url: 'http://primarysourcenexus.org/2014/11/nhd-2015-selecting-topic-history-project',
+            url: 'https://primarysourcenexus.org/2014/11/nhd-2015-selecting-topic-history-project/',
             text: 'Selecting a Topic for NHD'
           }
         ]
@@ -81,19 +81,19 @@
       openThemeBook: function () {
         this.$emit('update-current-page', 'GettingStarted_ThemeBook')
 
-        utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/NHD_2020ThemeBook_web%20version_0.pdf')
+        utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/NHD_2020ThemeBook_web%20version_0.pdf')
       },
 
       openRuleBook: function () {
         this.$emit('update-current-page', 'GettingStarted_RuleBook')
 
-        utilsModule.openUrl('http://nimbus.lagrange.edu/resources/documents/NHDContestRuleBook_Web%202014-2015.pdf')
+        utilsModule.openUrl('https://nimbus.lagrange.edu/resources/documents/NHDContestRuleBook_Web%202014-2015.pdf')
       },
 
       openThemeNarrative: function () {
         this.$emit('update-current-page', 'GettingStarted_ThemeNarrative')
 
-        utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/NHD_2020ThemeNarrative.pdf')
+        utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/NHD_2020ThemeNarrative.pdf')
       }
     }
   }
