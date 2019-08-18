@@ -12,6 +12,7 @@ app/.DS_Store
 app/assets/.DS_Store
 app/assets/images/.DS_Store
 *.keystore
+*.key
 *.apk
 .migration_backup
 .vscode
