@@ -1,17 +1,22 @@
 <template>
   <Page actionBarHidden="true">
-    <ScrollView>
+    <ScrollView v-if="!showWebView">
       <ListView for="tool in researchTools" @itemTap="onResearchToolTap">
         <v-template>
           <Image :src="tool.imageSrc" width="80%" class="m-y-5" />
         </v-template>
       </ListView>
     </ScrollView>
+
+    <GridLayout v-else rows="* 50">
+      <WebView :src="webViewSrc" row="0" />
+      <Button row="1" text="< Back to Research Tools" @tap="goBack" />
+    </GridLayout>
   </Page>
 </template>
 
 <script>
-  import * as utilsModule from 'tns-core-modules/utils/utils'
+  import view from 'tns-core-modules/ui/core/view'
 
   export default {
     name: 'ResearchTools',
@@ -19,11 +24,13 @@
     icon: 'fa-wrench',
     data () {
       return {
+        showWebView: false,
+        webViewSrc: '',
         researchTools: [
           {
             name: 'ResearchTool_Galileo',
             imageSrc: '~/assets/images/galileo-logo.png',
-            url: 'http://www.galileo.usg.edu/express?link=nhda'
+            url: 'https://www.galileo.usg.edu/express?link=nhda'
           },
           {
             name: 'ResearchTool_DigitalLibrarayGeorgia',
@@ -59,7 +66,12 @@
     methods: {
       onResearchToolTap: function (e) {
         this.$emit('update-current-page', e.item.name)
-        utilsModule.openUrl(e.item.url)
+        this.webViewSrc = e.item.url
+        this.showWebView = true
+      },
+
+      goBack: function (args) {
+        this.showWebView = false
       }
     }
   }
