@@ -10,7 +10,7 @@
                 <Label :text="event.startDate | date" class="font-weight-bold" />
                 <Label :text="event.notes" />
               </StackLayout>
-              <Image :src="getCalendarSrc(index)" style="width: 120px" dock="right" horizontalAlignment="right" />
+              <Image :src="getCalendarSrc(index)" style="width: 120px" dock="right" horizontalAlignment="right" :class="{ toggling: event.isAddedToCalendar }" />
             </DockLayout>
           </StackLayout>
         </v-template>
@@ -21,7 +21,8 @@
 
 <script>
   import * as utilsModule from 'tns-core-modules/utils/utils'
-  import * as Calendar from "nativescript-calendar"
+  import * as Calendar from 'nativescript-calendar'
+  import { Toasty, ToastPosition } from 'nativescript-toasty'
 
   export default {
     name: 'Events',
@@ -29,6 +30,7 @@
     icon: 'fa-calendar',
     data () {
       return {
+        toggleAnimationState: [],
         events: [
           {
             title: '"Welcome to the Theme" Live Webinar (via Vimeo)',
@@ -102,8 +104,6 @@
       onEventTap: async function (e) {
         // this.$emit('update-current-page', e.item.title)
         // utilsModule.openUrl(e.item.url)
-        console.log(e)
-
         let options = {
           title: e.item.title,
           startDate: e.item.startDate,
@@ -118,7 +118,20 @@
           console.log(`Created Event with ID: ${createdId}`)
 
           e.item.isAddedToCalendar = true
-        } catch (e) {
+
+          const toast = new Toasty({
+            text: 'Event Added to Calendar!',
+            position: ToastPosition.CENTER,
+            android: { yAxisOffset: 100 },
+            ios: {
+              displayShadow: true,
+              cornerRadius: 24
+            }
+          })
+
+          toast.show()
+        }
+        catch (e) {
           console.log("Error creating an Event: " + e)
         }
       },
@@ -138,5 +151,31 @@
   .research-link {
     width: 75%;
     margin: 20px 0px;
+  }
+
+  .toggling {
+    animation-name: toggle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes toggle {
+    0% {
+      transform: scale(1, 1);
+    }
+
+    30%,
+    70% {
+      transform: scale(0.8, 0.8);
+    }
+
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
   }
 </style>
