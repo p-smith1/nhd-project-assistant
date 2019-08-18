@@ -110,7 +110,12 @@
           endDate: e.item.endDate,
           location: e.item.location,
           notes: e.item.notes,
-          url: e.item.url
+          url: e.item.url,
+          calendar: {
+            name: 'NHD Georgia Events',
+            color: '#CB2C30',
+            accountName: 'NHD Georgia'
+          }
         }
 
         try {
