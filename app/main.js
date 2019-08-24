@@ -10,11 +10,15 @@ import Home from '~/pages/Home'
 import VueDevtools from 'nativescript-vue-devtools'
 import {TNSFontIcon, fonticon} from 'nativescript-fonticon'
 
+import { PDFView } from 'nativescript-pdf-view'
+
 TNSFontIcon.debug = true;
 TNSFontIcon.paths = {
   'fa': './assets/font-awesome.css'
 }
 TNSFontIcon.loadCss()
+
+Vue.registerElement('PDFView', () => PDFView)
 
 Vue.filter('fonticon', fonticon)
 
