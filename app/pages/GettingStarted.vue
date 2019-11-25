@@ -56,6 +56,12 @@
         pdfSource: null,
         sources: [
           {
+            name: 'GettingStarted_NhdGaThemeTopicExplorer',
+            url: 'https://www.georgiahumanities.org/2019/09/25/nhd-topic-explorer',
+            asset: null,
+            text: 'NHD GA Theme Topic Explorer'
+          },
+          {
             name: 'GettingStarted_HowToNarrowTopicDrShirley',
             url: 'https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/Narrowing-a-Topic.pdf',
             asset: '/assets/pdfs/NarrowingTopic.pdf',
@@ -75,7 +81,7 @@
           },
           {
             name: 'GettingStarted_SelectingTopicNhd',
-            url: 'https://primarysourcenexus.org/2014/11/nhd-2015-selecting-topic-history-project/',
+            url: 'https://primarysourcenexus.org/2014/11/nhd-2015-selecting-topic-history-project',
             asset: null,
             text: 'Selecting a Topic for NHD'
           }
