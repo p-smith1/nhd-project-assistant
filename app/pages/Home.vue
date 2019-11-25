@@ -15,8 +15,8 @@
         <Label text="Sponsors" class="font-weight-bold m-t-10" />
         <Label class="hr-dark m-10" />
         <StackLayout orientation="horizontal" horizontalAlignment="center">
-          <Image src="~/assets/images/ga-humanities-logo.png" width="45%" class="m-x-5" />
-          <Image src="~/assets/images/lagrange-college-logo.png" width="45%" class="m-x-10" />
+          <Image src="~/assets/images/ga-humanities-logo.png" @tap="openHumanities()" width="45%" class="m-x-5" />
+          <Image src="~/assets/images/lagrange-college-logo.png" @tap="openCollege()" width="45%" class="m-x-10" />
         </StackLayout>
       </StackLayout>
     </ScrollView>
@@ -24,6 +24,8 @@
 </template>
 
 <script>
+  import * as utilsModule from 'tns-core-modules/utils/utils'
+
   export default {
     name: 'Home',
     displayName: 'Home',
@@ -32,6 +34,13 @@
       return {};
     },
     methods: {
+      openCollege: function () {
+        utilsModule.openUrl('https://www.lagrange.edu/')
+      },
+
+      openHumanities: function () {
+        utilsModule.openUrl('https://www.georgiahumanities.org/')
+      }
     }
   }
 </script>
