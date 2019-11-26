@@ -35,7 +35,7 @@
           {
             title: 'UGA/NE Georgia Regional, UGA',
             startDate: new Date('2020-02-15T00:00:00'),
-            endDate: new Date('2019-02-16T00:00:00'),
+            endDate: new Date('2020-02-16T00:00:00'),
             location: '1197 S Lumpkin St, Athens, GA 30602',
             notes: 'UGA Center for Continuing Education',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -44,7 +44,7 @@
           {
             title: 'Middle Georgia History Day, MGSU',
             startDate: new Date('2020-02-15T00:00:00'),
-            endDate: new Date('2019-02-16T00:00:00'),
+            endDate: new Date('2020-02-16T00:00:00'),
             location: '100 University Pkwy, Macon, GA 31206',
             notes: 'Middle Georgia State University',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -53,7 +53,7 @@
           {
             title: 'Thomas County History Day, TCMS',
             startDate: new Date('2020-02-20T00:00:00'),
-            endDate: new Date('2019-02-21T00:00:00'),
+            endDate: new Date('2020-02-21T00:00:00'),
             location: '4681 US HWY 84 Bypass, Thomasville, GA 31792',
             notes: 'Thomas County Middle School',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -62,7 +62,7 @@
           {
             title: 'Henry County History Day, HCSS',
             startDate: new Date('2020-03-02T00:00:00'),
-            endDate: new Date('2019-03-03T00:00:00'),
+            endDate: new Date('2020-03-03T00:00:00'),
             location: '33 N Zack Hinton Pkwy, McDonough, GA 30253',
             notes: 'Henry Country School System',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -71,7 +71,7 @@
           {
             title: 'Toombs Christian Academy History Day',
             startDate: new Date('2020-03-03T00:00:00'),
-            endDate: new Date('2019-03-04T00:00:00'),
+            endDate: new Date('2020-03-04T00:00:00'),
             location: '628 W Oglethorpe Ave, Lyons, GA 30436',
             notes: 'Robert Toombs Christian Academy',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -80,7 +80,7 @@
           {
             title: 'Augusta Regional, Augusta University',
             startDate: new Date('2020-03-07T00:00:00'),
-            endDate: new Date('2019-03-08T00:00:00'),
+            endDate: new Date('2020-03-08T00:00:00'),
             location: '2500 Walton Way, Augusta, GA 30904',
             notes: 'Summerville Campus, Allgood Hall',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -89,7 +89,7 @@
           {
             title: 'KSU Regional, Kennesaw State University',
             startDate: new Date('2020-03-07T00:00:00'),
-            endDate: new Date('2019-03-08T00:00:00'),
+            endDate: new Date('2020-03-08T00:00:00'),
             location: '1000 Chastain Road, Kennesaw, GA 30144',
             notes: 'Kennesaw State University',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -98,7 +98,7 @@
           {
             title: 'South Metro Regional, Jonesboro Georgia',
             startDate: new Date('2020-03-07T00:00:00'),
-            endDate: new Date('2019-03-08T00:00:00'),
+            endDate: new Date('2020-03-08T00:00:00'),
             location: '1087 Battle Creek Road, Joneseboro, Georgia',
             notes: 'Professional Learning Center',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -107,7 +107,7 @@
           {
             title: 'Coastal Georgia Regional, CGHS, Liberty County PAC',
             startDate: new Date('2020-03-11T00:00:00'),
-            endDate: new Date('2019-03-12T00:00:00'),
+            endDate: new Date('2020-03-12T00:00:00'),
             location: '2140 E Oglethorpe Hwy, Hinesville, GA 31313',
             notes: 'Liberty Co. Performing Arts Center',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -116,7 +116,7 @@
           {
             title: 'Georgia Southwestern Regional, GSSU',
             startDate: new Date('2020-03-13T00:00:00'),
-            endDate: new Date('2019-03-14T00:00:00'),
+            endDate: new Date('2020-03-14T00:00:00'),
             location: '800 Georgia Southwestern State University Drive, Americus, GA 31709',
             notes: 'GA Southwestern State University',
             url: 'http://bit.ly/NHDGA_Regionals',
@@ -125,7 +125,7 @@
           {
             title: 'West Georgia Regional, LaGrange College',
             startDate: new Date('2020-03-13T00:00:00'),
-            endDate: new Date('2019-03-14T00:00:00'),
+            endDate: new Date('2020-03-14T00:00:00'),
             location: '601 Broad St, LaGrange, GA 30240',
             notes: 'LaGrange College',
             url: 'http://bit.ly/NHDGA_Regionals',
