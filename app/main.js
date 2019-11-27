@@ -12,7 +12,7 @@ import {TNSFontIcon, fonticon} from 'nativescript-fonticon'
 
 import { PDFView } from 'nativescript-pdf-view'
 
-TNSFontIcon.debug = true;
+TNSFontIcon.debug = false
 TNSFontIcon.paths = {
   'fa': './assets/font-awesome.css'
 }
