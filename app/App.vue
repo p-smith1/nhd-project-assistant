@@ -68,7 +68,7 @@
         email.compose({
           subject: 'NHD Georgia Native App Feedback',
           body: '',
-          to: ['kshirley@lagrange.edu'],
+          to: ['nhdhistory@lagrange.edu'],
           cc: [],
           bcc: []
         })
@@ -99,7 +99,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     ActionBar {
         background-color: #CB2C30;
         color: #ffffff;
@@ -130,9 +130,13 @@
     }
 
     .drawer-item {
-        padding: 16 16;
-        color: #333333;
-        width: 60em;
+      padding: 16 16;
+      color: #333333;
+      width: 60em;
+
+      @at-root .ns-dark & {
+        color: #ffffff;
+      }
     }
 
     .item-border {
