@@ -19,7 +19,7 @@
     "nativescript-email": "^1.5.5",
     "nativescript-fonticon": "^2.0.0",
     "nativescript-pdf-view": "^2.1.0",
-    "nativescript-plugin-firebase": "10.2.0",
+    "nativescript-plugin-firebase": "10.2.1",
     "nativescript-socketio": "^3.3.1",
     "nativescript-theme-core": "^2.0.24",
     "nativescript-toasty": "^2.0.1",
