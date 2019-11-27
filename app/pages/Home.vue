@@ -4,7 +4,7 @@
       <DockLayout stretchLastChild="false">
         <StackLayout class="m-10" dock="top">
           <Image src="~/assets/images/nhd-ga-logo.png" width="35%" />
-          <Label textWrap="true" class="m-b-20" 
+          <Label textWrap="true" class="m-t-20" 
                  text="Welcome to NHD Georgia. Our goal is to help you get the most out of your History Day Project. You are joining a global community of NHD scholars totaling more than half a million last year. So, welcome to the adventure that is National History Day!" />
         </StackLayout>
 
@@ -40,5 +40,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>
