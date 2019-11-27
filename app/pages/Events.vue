@@ -3,12 +3,12 @@
     <ScrollView>
       <ListView for="(event, index) in events" @itemTap="onEventTap">
         <v-template>
-          <StackLayout class="p-10">
-            <Label :text="event.title" class="h2" />
+          <StackLayout>
+            <Label :text="event.title" class="h2 p-0" />
             <DockLayout stretchLastChild="false">
-              <StackLayout dock="left">
-                <Label :text="event.startDate | date" class="font-weight-bold" />
-                <Label :text="event.notes" />
+              <StackLayout dock="left" class="p-0">
+                <Label :text="event.startDate | date" class="font-weight-bold p-0" />
+                <Label :text="event.notes" class="p-0" />
               </StackLayout>
               <Image :src="getCalendarSrc(index)" style="width: 120px" dock="right" horizontalAlignment="right" :class="{ toggling: event.isAddedToCalendar }" />
             </DockLayout>
@@ -146,7 +146,6 @@
 
     filters: {
       date : function (value) {
-        console.log(value)
         let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
         return value.toLocaleDateString("en-US", options)
@@ -208,10 +207,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .research-link {
-    width: 75%;
-    margin: 20px 0px;
-  }
 
   .toggling {
     animation-name: toggle;

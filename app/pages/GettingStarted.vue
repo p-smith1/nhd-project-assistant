@@ -1,19 +1,18 @@
 <template>
   <Page actionBarHidden="true">
     <StackLayout v-if="!showPdf">
-      <TabView>
+      <TabView tabTextFontSize="14">
         <TabViewItem title="Theme">
           <ScrollView>
             <StackLayout class="m-10">
               <Image src="~/assets/images/breaking-barriers-logo.png" width="70%" class="m-b-20" />
 
               <Label text="Theme" class="font-weight-bold" />
-              <Label class="hr-dark m-10" />
               <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2019-2020 theme book and rule book.  This year’s theme is “Breaking Barriers in History”" />
 
-              <Button text="2020 Theme Book" class="m-y-10" @tap="openThemeBook()" />
-              <Button text="2020 NHD Rule Book" class="m-y-10" @tap="openRuleBook()" />
-              <Button text="2020 NHD Theme Narrative" class="m-y-10" @tap="openThemeNarrative()" />
+              <Button text="2020 Theme Book" class="nt-button -primary -rounded-lg -font-sm m-b-2" @tap="openThemeBook()" />
+              <Button text="2020 NHD Rule Book" class="nt-button -primary -rounded-lg -font-sm m-b-2" @tap="openRuleBook()" />
+              <Button text="2020 NHD Theme Narrative" class="nt-button -primary -rounded-lg -font-sm" @tap="openThemeNarrative()" />
             </StackLayout>
           </ScrollView>
         </TabViewItem>
@@ -21,12 +20,11 @@
           <ScrollView height="100%">
             <StackLayout height="100%" class="m-10">
               <Label text="Topic Exploration" class="font-weight-bold" />
-              <Label class="hr-dark m-10" />
-              <Label textWrap="true" text="Selecting a topic for your NHD project is one of the most critical decisions you’re going to make.  This is a subject that you’re going to be spending a LOT of time with so it has to be something YOU are interested in.  Remember that you want to be able to show how your topic relates to the theme AND its significance to history!  Check out the following sources to help you select and narrow a topic for your NHD project:" />
+              <Label class="m-b-5" textWrap="true" text="Selecting a topic for your NHD project is one of the most critical decisions you’re going to make.  This is a subject that you’re going to be spending a LOT of time with so it has to be something YOU are interested in.  Remember that you want to be able to show how your topic relates to the theme AND its significance to history!  Check out the following sources to help you select and narrow a topic for your NHD project:" />
 
-              <ListView for="source in sources" height="100%" class="m-t-20">
+              <ListView for="source in sources" height="100%">
                 <v-template>
-                  <Button :text="source.text" class="m-y-10" @tap="onSourceTap(source)" />
+                  <Button class="nt-button -primary -rounded-lg -font-sm" :text="source.text" @tap="onSourceTap(source)" />
                 </v-template>
               </ListView>
             </StackLayout>
@@ -137,5 +135,11 @@
 </script>
 
 <style lang="scss" scoped>
+.-font-sm {
+  font-size: 16px;
+}
 
+TabViewItem {
+  font-size: 10px;
+}
 </style>
