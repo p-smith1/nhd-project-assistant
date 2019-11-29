@@ -100,47 +100,46 @@
 </script>
 
 <style lang="scss" scoped>
-    ActionBar {
-        background-color: #CB2C30;
-        color: #ffffff;
-    }
+  ActionBar GridLayout Label {
+    color: #ffffff;
+  }
 
-    .fa-lg {
-      font-size: 20em;
-    }
+  .fa-lg {
+    font-size: 20em;
+  }
 
-    .title {
-        text-align: left;
-        padding-left: 16;
-    }
+  .title {
+      text-align: left;
+      padding-left: 16;
+  }
 
-    .message {
-        vertical-align: center;
-        text-align: center;
-        font-size: 20;
-        color: #333333;
-    }
-
-    .drawer-header {
-        padding: 50 16 16 16;
-        margin-bottom: 16;
-        background-color: #CB2C30;
-        color: #ffffff;
-        font-size: 24;
-    }
-
-    .drawer-item {
-      padding: 16 16;
+  .message {
+      vertical-align: center;
+      text-align: center;
+      font-size: 20;
       color: #333333;
-      width: 60em;
+  }
 
-      @at-root .ns-dark & {
-        color: #ffffff;
-      }
-    }
+  .drawer-header {
+      padding: 50 16 16 16;
+      margin-bottom: 16;
+      background-color: #CB2C30;
+      color: #ffffff;
+      font-size: 24;
+  }
 
-    .item-border {
-      border-bottom-color: black;
-      border-bottom-width: 1px;
+  .drawer-item {
+    padding: 16 16;
+    color: #333333;
+    width: 60em;
+
+    @at-root .ns-dark & {
+      color: #ffffff;
     }
+  }
+
+  .item-border {
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+  }
 </style>

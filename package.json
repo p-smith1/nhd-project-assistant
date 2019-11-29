@@ -6,11 +6,12 @@
   "license": "MIT",
   "nativescript": {
     "id": "net.kashew.nhd.ga",
+    "templateVersion": "v2",
     "tns-android": {
-      "version": "6.0.0"
+      "version": "6.2.0"
     },
     "tns-ios": {
-      "version": "6.2.1"
+      "version": "6.2.0"
     }
   },
   "dependencies": {
@@ -26,7 +27,7 @@
     "nativescript-ui-sidedrawer": "8.0.0",
     "nativescript-vue": "^2.4.0",
     "nativescript-vue-devtools": "^1.2.0",
-    "tns-core-modules": "6.2.1",
+    "tns-core-modules": "6.2.3",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -39,7 +40,6 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.0",
-    "lazy": "1.0.11",
     "nativescript-dev-webpack": "1.3.0",
     "nativescript-vue-template-compiler": "^2.4.0",
     "nativescript-worker-loader": "~0.9.5",

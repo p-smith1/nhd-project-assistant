@@ -10,9 +10,9 @@
               <Label text="Theme" class="font-weight-bold" />
               <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2019-2020 theme book and rule book.  This year’s theme is “Breaking Barriers in History”" />
 
-              <Button text="2020 Theme Book" class="nt-button -primary -rounded-lg -font-sm m-b-2" @tap="openThemeBook()" />
-              <Button text="2020 NHD Rule Book" class="nt-button -primary -rounded-lg -font-sm m-b-2" @tap="openRuleBook()" />
-              <Button text="2020 NHD Theme Narrative" class="nt-button -primary -rounded-lg -font-sm" @tap="openThemeNarrative()" />
+              <Button text="2020 Theme Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openThemeBook()" />
+              <Button text="2020 NHD Rule Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openRuleBook()" />
+              <Button text="2020 NHD Theme Narrative" class="nt-button -primary -rounded-lg font-sm" @tap="openThemeNarrative()" />
             </StackLayout>
           </ScrollView>
         </TabViewItem>
@@ -24,7 +24,7 @@
 
               <ListView for="source in sources" height="100%">
                 <v-template>
-                  <Button class="nt-button -primary -rounded-lg -font-sm" :text="source.text" @tap="onSourceTap(source)" />
+                  <Button class="nt-button -primary -rounded-lg font-sm" :text="source.text" @tap="onSourceTap(source)" />
                 </v-template>
               </ListView>
             </StackLayout>
@@ -135,11 +135,11 @@
 </script>
 
 <style lang="scss" scoped>
-.-font-sm {
-  font-size: 16px;
-}
+  .font-sm {
+    font-size: 16px;
+  }
 
-TabViewItem {
-  font-size: 10px;
-}
+  TabViewItem {
+    font-size: 10px;
+  }
 </style>
