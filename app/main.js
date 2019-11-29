@@ -2,8 +2,6 @@ import Vue from 'nativescript-vue'
 import App from './App'
 import routes from '~/router'
 import store from './store'
-import drawerContent from '~/components/drawerContent'
-import sideDrawer from '~/components/sideDrawer'
 import firebase from 'nativescript-plugin-firebase'
 import Home from '~/pages/Home'
 
@@ -41,7 +39,7 @@ if(TNS_ENV !== 'production') {
 }
 
 // Prints Vue logs when --env.production is *NOT* set while building
-Vue.config.silent = (TNS_ENV === 'production')
+Vue.config.silent = false // (TNS_ENV === 'production')
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
 

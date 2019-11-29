@@ -6,16 +6,13 @@
 
 // @import '~nativescript-theme-core/scss/index';
 
+$ab-background: #CB2C30;
+$focus: #CB2C30;
+
 @import "~nativescript-theme-core/core";
-@import "~nativescript-theme-core/blue";
 
 // Global SCSS styling
 // @see https://docs.nativescript.org/ui/styling
-
-ActionBar {
-    background-color: #CB2C30;
-    color: #ffffff;
-}
 
 .title {
     text-align: left;

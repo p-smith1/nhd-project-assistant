@@ -207,7 +207,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   .toggling {
     animation-name: toggle;
     animation-duration: 0.5s;

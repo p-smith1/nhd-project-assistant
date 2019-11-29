@@ -3,7 +3,7 @@
     <ScrollView v-if="!showWebView">
       <ListView for="tool in researchTools" @itemTap="onResearchToolTap">
         <v-template>
-          <Image :src="tool.imageSrc" width="80%" class="m-y-5" />
+          <Image :src="tool.imageSrc" width="80%" class="m-y-5 bg-white" />
         </v-template>
       </ListView>
     </ScrollView>
@@ -78,8 +78,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .research-link {
-    width: 75%;
-    margin: 20px 0px;
+  .bg-white {
+    background-color: white;
   }
 </style>
