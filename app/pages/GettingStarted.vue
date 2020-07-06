@@ -5,14 +5,14 @@
         <TabViewItem title="Theme">
           <ScrollView>
             <StackLayout class="m-10">
-              <Image src="~/assets/images/breaking-barriers-logo.png" width="70%" class="m-b-20" />
+              <Image src="~/assets/images/theme-logo.png" width="70%" class="m-b-20" />
 
               <Label text="Theme" class="font-weight-bold" />
-              <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2019-2020 theme book and rule book.  This year’s theme is “Breaking Barriers in History”" />
+              <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2020-2021 theme book and rule book.  This year’s theme is “Communication in History”" />
 
-              <Button text="2020 Theme Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openThemeBook()" />
-              <Button text="2020 NHD Rule Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openRuleBook()" />
-              <Button text="2020 NHD Theme Narrative" class="nt-button -primary -rounded-lg font-sm" @tap="openThemeNarrative()" />
+              <Button text="2021 Theme Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openThemeBook()" />
+              <Button text="2021 NHD Rule Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openRuleBook()" />
+              <Button text="2021 NHD Theme Narrative" class="nt-button -primary -rounded-lg font-sm" @tap="openThemeNarrative()" />
             </StackLayout>
           </ScrollView>
         </TabViewItem>
@@ -102,10 +102,8 @@
       openThemeBook: function () {
         this.$emit('update-current-page', 'GettingStarted_ThemeBook')
 
-        this.pdfSource = path.normalize(knownFolders.currentApp().path + '/assets/pdfs/NhdThemeBook2020.pdf')
+        this.pdfSource = path.normalize(knownFolders.currentApp().path + '/assets/pdfs/NhdThemeBook.pdf')
         this.showPdf = true
-
-        // utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/NHD_2020ThemeBook_web%20version_0.pdf')
       },
 
       openRuleBook: function () {
@@ -113,17 +111,13 @@
 
         this.pdfSource = path.normalize(knownFolders.currentApp().path + '/assets/pdfs/NhdRuleBook2014-2015.pdf')
         this.showPdf = true
-
-        // utilsModule.openUrl('https://nimbus.lagrange.edu/resources/documents/NHDContestRuleBook_Web%202014-2015.pdf')
       },
 
       openThemeNarrative: function () {
         this.$emit('update-current-page', 'GettingStarted_ThemeNarrative')
 
-        this.pdfSource = path.normalize(knownFolders.currentApp().path + '/assets/pdfs/NhdThemeNarrative2020.pdf')
+        this.pdfSource = path.normalize(knownFolders.currentApp().path + '/assets/pdfs/NhdThemeNarrative.pdf')
         this.showPdf = true
-
-        // utilsModule.openUrl('https://www.lagrange.edu/academics/undergraduate/majors/history/national-history-day/_images/NHD_2020ThemeNarrative.pdf')
       },
 
       goBack: function () {
